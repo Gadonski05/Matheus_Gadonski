@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalho em JS</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<style>
+    .pecas{
+        width: 70%;
+            border: 0;
+            border-radius: 10px;
+            box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+        }
+
+        dialog::backdrop{
+            background-color: rgba(0, 0, 0, 0.5);
+    }
+</style>
+<body>
+    <h1>Catálogo de Peças</h1>
+
+    <div class="pecas">
+        <img src="pecas_carro.jpg" alt="Capa do site">
+        <h2>Título do Livro</h2>
+        <p>Peça: Nome da Peça</p>
+        <p>Descrição breve da peça.</p>
+    </div>
+
+    <script>
+        function Pecas(botao){
+            var pecas = botao.parentNode
+            pecas.classList.toggle("destacado");
+        }
+    </script>
+</body>
+</html>
